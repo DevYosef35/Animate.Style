@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    outline: 0;
+    text-decoration: none;
+}
+.intro{
+    height: calc(100vh - 50px);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: [intro-main] 1fr [intro-sidebar] 250px;
+    grid-template-areas: "intro-main intro-sidebar" 
+                         "intro-footer intro-sidebar";
+}
+.intro-main{
+    grid-area: intro-main;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+.intro-sidebar{
+    grid-area: intro-sidebar;
+}
+.intro-footer{
+    grid-area: intro-footer;
+    text-align: center;
+}
